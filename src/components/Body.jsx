@@ -45,6 +45,7 @@ const Body = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
+        viewport={{once: true , amount: 0.1}}
         className=" hi mt-5 "
       >
       <div className=" w-fit mx-auto ">
@@ -162,7 +163,7 @@ const Body = () => {
  
 
  <div className="aboutme w-fit mx-auto mt-4">
-  <div className={` font-bold flex justify-center text-6xl transition-gradients duration-1000 ${current.text}`}>About Me</div>
+  <div className={` font-bold flex justify-center text-4xl md:text-6xl transition-gradients duration-1000 ${current.text}`}>About Me</div>
   <div
   className={`line  mt-3 mb-6 w-[100px] md:w-[50%] flex justify-center drop-shadow-2xl hover:scale-105  mx-auto rounded-full h-2.5  transition-all duration-1000 ${current.gradient}`}
 ></div>
@@ -171,15 +172,73 @@ const Body = () => {
 </div>
  </div></motion.section>
 
- <div className="intro mt-15 flex gap-30 w-[80%] mx-auto ">
-  <div className="textPart mt-20  flex flex-col gap-10 text-blue-950  text-xl w-[50%]"><span>I'm a passionate frontend developer with a love for creating beautiful, functional web experiences. My journey in web development started with curiosity and has evolved into a dedication to crafting digital solutions that make a difference.</span>
+ <div className="intro mt-2 lg:mt-15 flex flex-col gap-20 w-[80%] mx-auto lg:flex-row  ">
+ <motion.section
+        initial={{ opacity: 0, y:50}}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true, amount: 0.3 }}
+        className=" hi  lg:mt-5 w-full lg:w-[50%]"
+      > <div className="textPart mt-20   lg:flex  lg:flex-col gap-10 text-blue-950  text-xl "><span>I'm a passionate frontend developer with a love for creating beautiful, functional web experiences. My journey in web development started with curiosity and has evolved into a dedication to crafting digital solutions that make a difference.</span>
 
 <span>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or learning about the latest trends in web development. I believe in continuous learning and pushing the boundaries of what's possible on the web.</span>
 
-<span> My goal is to bridge the gap between design and development, creating seamless user experiences that are both visually stunning and highly functional.</span></div>
-  <div className="w-[35%] h-[620px] border-4 border-gray-400 rounded-3xl overflow-hidden shadow-lg " ><img src="images/bijay.png" alt="photo"  className='w-full h-full object-cover' /></div>
+<span> My goal is to bridge the gap between design and development, creating seamless user experiences that are both visually stunning and highly functional.</span></div></motion.section>
+<motion.section
+        initial={{ opacity: 0, x:100 }}
+        whileInView={{ opacity: 1, x:0}}
+        transition={{ duration: 1 }}
+        viewport={{ once: true, amount: 0.3}}
+        className=" hi lg:mt-5 w-full lg:w-[35%]  "
+      >
+  <div className="h-[620px] border-4 border-gray-400 rounded-3xl overflow-hidden shadow-lg " ><img src="images/herobijay.jpg" alt="photo"  className='object-center w-full h-full' /></div></motion.section>
  </div>
 
+<div className="projects mt-30 mb-5 w-[80%] mx-auto">
+  <div className={` font-bold flex justify-center text-4xl md:text-6xl  transition-gradients duration-1000 ${current.text}`}>Projects</div>
+  <div
+  className={`line  mt-3 mb-6 w-[100px] md:w-[20%] flex justify-center drop-shadow-2xl hover:scale-105  mx-auto rounded-full h-2.5  transition-all duration-1000 ${current.gradient}`}
+></div>
+  <div className="lg:grid grid-cols-3 grid-rows-1 lg:gap-10 flex flex-col gap-5">
+   <motion.section
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true, amount: 0.3 }}
+        > <div className={`box h-[300px] md:h-[400px] border border-gray-900 rounded-lg shadow-lg hover: transform transition-transform hover:scale-106 duration-500  hover:shadow-purple-900 p-1 bg-gray-800  `}><img src="images/webwork.png" alt="" className='rounded-lg  hover:transform transition-transform hover:scale-102' /></div></motion.section>
+      
+       <motion.section
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true, amount: 0.3 }}>
+    <div className="box h-[300px] md:h-[400px] border border-gray-900 rounded-lg p-1  shadow-lg hover: transform transition-transform hover:scale-106 duration-500  hover:shadow-purple-900 bg-gray-800"> <img src="images/password-manager.png" alt="" className='rounded-lg   hover:transform transition-transform hover:scale-102' /></div></motion.section>
+
+      <motion.section
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true, amount: 0.3 }}>
+    <div className="box h-[300px] md:h-[400px] border border-gray-900 rounded-lg shadow-lg hover: transform transition-transform hover:scale-106 duration-500  hover:shadow-purple-900 p-1 bg-gray-800"><img src="images/todo.png " alt=""  className='h-[30%] w-full md:h-[50%] rounded-lg hover:transform transition-transform hover:scale-102'/>
+    <div className='flex flex-col gap-5 text-white p-2'> <div className='font-semibold'>Todo App</div>A modern, responsive Todo application built with React and JavaScript. CRUD operations like Update, delete, create.... </div>
+    <div className="buttons mt-2 flex px-4 gap-5"><span className='px-2 py-1 bg-gray-500 rounded-full'>React</span> <span className='py-1 px-2 bg-gray-500 rounded-full'>JavaScript</span></div></div></motion.section>
+  </div>
+ <motion.section
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true, amount: 0.3 }}
+        className='mt-10 w-[80%] mx-auto'>
+<div className="experience">
+    <div className={` font-bold flex justify-center text-4xl md:text-6xl  transition-gradients duration-1000 ${current.text}`}>Experience</div>
+<div
+  className={`line  mt-3 mb-6 w-[100px] md:w-[30%] flex justify-center drop-shadow-2xl hover:scale-105  mx-auto rounded-full h-2.5  transition-all duration-1000 ${current.gradient}`}
+></div>
+  </div></motion.section>
+
+
+
+</div> 
      
       
      

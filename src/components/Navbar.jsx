@@ -50,18 +50,18 @@ const Navbar = () => {
 
         </div>
         <div className="burger flex ">
-          <ul className=' lg:gap-4 m-1   border-gray-700 px-6 py-2   shadow-lg  hidden md:flex space-x-6'>
-            <li><a href="#home" className='rounded-full flex gap-1 hover:bg-white/20 p-1  justify-center items-center text-blue-950  hover:text-blue-700  font-bold cursor-pointer transition-all duration-300 ease-in-out '> Home</a></li>
+          <ul className=' lg:gap-4 m-1   border-gray-700 px-6 py-2 shadow-lg rounded-b-full    hidden md:flex space-x-6'>
+            <li><a href="#home" className='animate-bounce rounded-full flex gap-1 hover:bg-white/20 p-1  justify-center items-center text-blue-950  hover:text-blue-700  font-bold cursor-pointer transition-all duration-300 ease-in-out '> Home</a></li>
 
-                <li><a href="#about" className='rounded-full flex gap-1 justify-center items-center hover:bg-white/20 text-blue-950  hover:text-blue-700  font-bold cursor-pointer p-1'> About </a></li>
+                <li><a href="#about" className=' animate-bounce rounded-full flex gap-1 justify-center items-center hover:bg-white/20 text-blue-950  hover:text-blue-700  font-bold cursor-pointer p-1'> About </a></li>
 
-                <li><a href="#Experience" className='rounded-full flex gap-1 justify-center items-center hover:bg-white/20 text-blue-950  hover:text-blue-700  font-bold cursor-pointer p-1'> Experience </a></li>
+                <li><a href="#Experience" className='animate-bounce rounded-full flex gap-1 justify-center items-center hover:bg-white/20 text-blue-950  hover:text-blue-700  font-bold cursor-pointer p-1'> Experience </a></li>
 
-                <li><a href="#Skills" className='rounded-full flex gap-1 justify-center items-center hover:bg-white/20 text-blue-950  hover:text-blue-700  font-bold cursor-pointer p-1'> Skills</a></li>
+                <li><a href="#Skills" className='animate-bounce rounded-full flex gap-1 justify-center items-center hover:bg-white/20 text-blue-950  hover:text-blue-700  font-bold cursor-pointer p-1'> Skills</a></li>
 
-                <li><a href="#Projects" className='rounded-full flex gap-1 justify-center items-center hover:bg-white/20 text-blue-950  hover:text-blue-700  font-bold cursor-pointer p-1'> Projects</a></li>
+                <li><a href="#Projects" className='animate-bounce rounded-full flex gap-1 justify-center items-center hover:bg-white/20 text-blue-950  hover:text-blue-700  font-bold cursor-pointer p-1'> Projects</a></li>
 
-                <li><a href="#Contact" className='rounded-full flex gap-1 justify-center items-center hover:bg-white/20 text-blue-950  hover:text-blue-700  font-bold cursor-pointer p-1'> Contact</a></li>
+                <li><a href="#Contact" className='animate-bounce rounded-full flex gap-1 justify-center items-center hover:bg-white/20 text-blue-950  hover:text-blue-700  font-bold cursor-pointer p-1'> Contact</a></li>
               </ul>
           <button
             className={`md:hidden relative right-0  p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-400 
@@ -91,17 +91,17 @@ const Navbar = () => {
              X 
               </button>
               <ul className=' gap-5  flex flex-col  px-10 py-8     space-x-6'>
-                <li><a href="#home" className='rounded-full flex gap-1 hover:bg-white/20 p-1  justify-center items-center text-blue-950  hover:text-blue-700  font-bold cursor-pointer transition-all duration-300 ease-in-out animate-bounce '> Home</a></li>
+                <li><a href="#home" className='animate-bounce rounded-full flex gap-1 hover:bg-white/20 p-1  justify-center items-center text-blue-950  hover:text-blue-700  font-bold cursor-pointer transition-all duration-300 ease-in-out animate-bounce '> Home</a></li>
 
-                <li><a href="#about" className='rounded-full flex gap-1 justify-center animate-bounce items-center hover:bg-white/20 text-blue-950  hover:text-blue-700  font-bold cursor-pointer p-1'> About </a></li>
+                <li><a href="#about" className='animate-bounce rounded-full flex gap-1 justify-center animate-bounce items-center hover:bg-white/20 text-blue-950  hover:text-blue-700  font-bold cursor-pointer p-1'> About </a></li>
 
-                <li><a href="#Experience" className='rounded-full flex gap-1 justify-center animate-bounce items-center hover:bg-white/20 text-blue-950  hover:text-blue-700  font-bold cursor-pointer p-1'> Experience </a></li>
+                <li><a href="#Experience" className='animate-bounce rounded-full flex gap-1 justify-center animate-bounce items-center hover:bg-white/20 text-blue-950  hover:text-blue-700  font-bold cursor-pointer p-1'> Experience </a></li>
 
-                <li><a href="#Skills" className='rounded-full flex gap-1 justify-center animate-bounce items-center hover:bg-white/20 text-blue-950  hover:text-blue-700  font-bold cursor-pointer p-1'> Skills</a></li>
+                <li><a href="#Skills" className='animate-bounce rounded-full flex gap-1 justify-center animate-bounce items-center hover:bg-white/20 text-blue-950  hover:text-blue-700  font-bold cursor-pointer p-1'> Skills</a></li>
 
-                <li><a href="#Projects" className='rounded-full flex gap-1 justify-center animate-bounce items-center hover:bg-white/20 text-blue-950  hover:text-blue-700  font-bold cursor-pointer p-1'> Projects</a></li>
+                <li><a href="#Projects" className='animate-bounce rounded-full flex gap-1 justify-center animate-bounce items-center hover:bg-white/20 text-blue-950  hover:text-blue-700  font-bold cursor-pointer p-1'> Projects</a></li>
 
-                <li><a href="#Contact" className='rounded-full flex gap-1 justify-center animate-bounce items-center hover:bg-white/20 text-blue-950  hover:text-blue-700  font-bold cursor-pointer p-1'> Contact</a></li>
+                <li><a href="#Contact" className='animate-bounce rounded-full flex gap-1 justify-center animate-bounce items-center hover:bg-white/20 text-blue-950  hover:text-blue-700  font-bold cursor-pointer p-1'> Contact</a></li>
               </ul>
        </div>
           )}
